@@ -2,7 +2,7 @@ We can solve this by mapping over the `messages` prop we provided to `ChatStream
 
 ```js
 return (
-  <section className='chat-stream'>
+  <section className="chat-stream">
     {props.messages.map((message) => {
       return <div>{message.body}</div>;
     })}
