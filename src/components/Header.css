@@ -7,4 +7,20 @@ header {
   */
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15),
     0px 1px 0.5px rgba(0, 0, 0, 0.075);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerImages {
+  max-width: 70px;
+  border-radius: 50%;
+}
+
+.headerPerson {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 100px 0 0;
 }

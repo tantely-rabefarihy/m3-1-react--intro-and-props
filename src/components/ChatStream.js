@@ -16,7 +16,7 @@ const ChatStream = (props) => {
     <section className="chat-stream">
       {props.messages.map((message) => {
         let messageType;
-        if (message.user === props.currentUser) {
+        if (message.user.username === props.currentUser.username) {
           messageType = "sent";
         } else {
           messageType = "received";
@@ -24,8 +24,7 @@ const ChatStream = (props) => {
         return (
           <ChatMessage
             message={message}
-            user={message.user}
-            bosy={message.body}
+            key={message.id}
             messageType={messageType}
           />
         );
